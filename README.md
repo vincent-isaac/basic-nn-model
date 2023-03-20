@@ -80,8 +80,7 @@ scaler.fit(X_train)
 X_train_scaled=scaler.transform(X_train)
 
 model=Sequential([
-    Dense(8,activation='relu'),
-    Dense(10,activation='relu'),
+    Dense(2,activation='relu'),
     Dense(1)
 ])
 model.compile(optimizer='rmsprop',loss='mse')
@@ -100,21 +99,21 @@ model.predict(x_n1_1)
 ```
 ## DATASET INFORMATION
 
-![dl1](https://user-images.githubusercontent.com/75234588/225381305-6ab1013b-2194-4959-9eae-d5874b340d56.PNG)
+![dl1](https://user-images.githubusercontent.com/75234588/226409462-d19150da-4266-44e7-9e85-4dbe2226af3b.PNG)
 
 ## OUTPUT
 
 ### Training Loss Vs Iteration Plot
 
-![dl2](https://user-images.githubusercontent.com/75234588/225381564-338010e8-bfea-4973-ae71-790544e822dc.png)
+![dl2](https://user-images.githubusercontent.com/75234588/226409486-82bcc472-a4ff-40d1-aea4-e81447a88b03.PNG)
 
 ### Test Data Root Mean Squared Error
 
-![dl3](https://user-images.githubusercontent.com/75234588/225385316-c7e4bf29-d1f9-44de-82ea-52ea8dde75c8.PNG)
+![dl3](https://user-images.githubusercontent.com/75234588/226409540-3e6c0a96-68ec-4810-9b79-954820d232a9.PNG)
 
 ### New Sample Data Prediction
 
-![dl4](https://user-images.githubusercontent.com/75234588/225385361-8929a9b0-40ae-49a1-a4ad-927dac2ba8b5.PNG)
+![dl4](https://user-images.githubusercontent.com/75234588/226409589-0047e69c-87f2-478c-ab01-574c1fb47f6d.PNG)
 
 
 ## RESULT
