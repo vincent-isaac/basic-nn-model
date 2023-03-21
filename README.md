@@ -87,7 +87,7 @@ model=Sequential([
     Dense(1)
 ])
 model.compile(optimizer='rmsprop',loss='mse')
-model.fit(x=X_train_scaled,y=Y_train,epochs=20000)
+model.fit(x=X_train_scaled,y=Y_train,epochs=500)
 
 loss_df=pd.DataFrame(model.history.history)
 loss_df.plot()
