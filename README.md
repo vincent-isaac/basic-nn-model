@@ -6,7 +6,7 @@ To develop a neural network regression model for the given dataset.
 
 ## THEORY
 
-We create a simple dataset with one input and one output. This data is then divided into testing and training sets for our Neural Network Model to train and test on. The NN Model contains input layer, 2 nodes/neurons in the hidden layer which is then connected to the final output layer with one node/neuron. The Model is then compiled with an loss function and Optimizer, here we use MSE and rmsprop. The model is then trained for 2000 epochs.
+We create a simple dataset with one input and one output. This data is then divided into testing and training sets for our Neural Network Model to train and test on. The NN Model contains input layer, 3 hidden layer with 12, 6, 3 nodes/neurons in it, which is then connected to the final output layer with one node/neuron. The Model is then compiled with an loss function and Optimizer, here we use MSE and rmsprop. The model is then trained for 150 epochs.
 We then perform an evaluation of the model with the test data. An user input is then predicted with the model. Finally, we plot the Training Loss VS Iteration graph for the given model.
 
 ## NEURAL NETWORK MODEL
@@ -110,15 +110,15 @@ model.predict(x_n1)
 
 ### Training Loss Vs Iteration Plot
 
-![dl2](https://user-images.githubusercontent.com/75234588/226409486-82bcc472-a4ff-40d1-aea4-e81447a88b03.PNG)
+![dl2](https://user-images.githubusercontent.com/75234588/226635294-16dfd685-749b-480a-8fb1-060ca34db86b.PNG)
 
 ### Test Data Root Mean Squared Error
 
-![dl3](https://user-images.githubusercontent.com/75234588/226409540-3e6c0a96-68ec-4810-9b79-954820d232a9.PNG)
+![dl3](https://user-images.githubusercontent.com/75234588/226635335-e549dc9f-6b6b-457f-acd6-44e90dffab2c.PNG)
 
 ### New Sample Data Prediction
 
-![dl4](https://user-images.githubusercontent.com/75234588/226409589-0047e69c-87f2-478c-ab01-574c1fb47f6d.PNG)
+![dl4](https://user-images.githubusercontent.com/75234588/226635385-95fcf7b0-e0a4-4467-a611-b0deff0f1a41.PNG)
 
 
 ## RESULT
