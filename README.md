@@ -83,11 +83,13 @@ scaler.fit(X_train)
 X_train_scaled=scaler.transform(X_train)
 
 model=Sequential([
-    Dense(2,activation='relu'),
+    Dense(12,activation='relu'),
+    Dense(6),
+    Dense(3),
     Dense(1)
 ])
 model.compile(optimizer='rmsprop',loss='mse')
-model.fit(x=X_train_scaled,y=Y_train,epochs=500)
+model.fit(x=X_train_scaled,y=Y_train,epochs=110)
 
 loss_df=pd.DataFrame(model.history.history)
 loss_df.plot()
@@ -95,10 +97,10 @@ loss_df.plot()
 x_Test1= Scaler.transform(x_test)
 model.evaluate(x_test,y_test)
 
-x_n1=[[4]]
+x_n1=[[50]]
 x_n1_1=Scaler.transform(x_n1)
 
-model.predict(x_n1_1)
+model.predict(x_n1)
 ```
 ## DATASET INFORMATION
 
